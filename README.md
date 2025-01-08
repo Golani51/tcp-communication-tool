@@ -82,25 +82,25 @@ The TCP/IP Client-Server Communication Tool is a custom-built project designed t
    git clone https://github.com/Golani51/tcp-ip-tool
    cd tcp-ip-tool
 1. **Clone the Repository**
-docker-compose up -d
+- docker-compose up -d
 2. **Access Docker Containers**
-docker exec -it H1 /bin/bash
-docker exec -it H2 /bin/bash
-docker exec -it H3 /bin/bash
+- docker exec -it H1 /bin/bash
+- docker exec -it H2 /bin/bash
+- docker exec -it H3 /bin/bash
 3. **Copy Files to Containers**
-docker cp TCPServerNew.py H1:/tmp/TCPServerNew.py
-docker cp TCPClientNew.py H2:/TCPClientNew.py
-docker cp TCPClientNew.py H3:/TCPClientNew.py
+- docker cp TCPServerNew.py H1:/tmp/TCPServerNew.py
+- docker cp TCPClientNew.py H2:/TCPClientNew.py
+- docker cp TCPClientNew.py H3:/TCPClientNew.py
 4. **Run the Server and Client**
-python3 /tmp/TCPServerNew.py
-python3 /TCPClientNew.py
+- python3 /tmp/TCPServerNew.py
+- python3 /TCPClientNew.py
 ##Common Docker Commands**
 **Stop All Containers**
-docker-compose down
+- docker-compose down
 **Remove All Containers**
-./purgeAll.sh
+- ./purgeAll.sh
 **List Running Containers**
-docker ps
+- docker ps
 ## Author
 **Benjamin Maher**  
 - [GitHub Profile](https://github.com/Golani51)  
