@@ -99,11 +99,11 @@ The TCP/IP Client-Server Communication Tool is a custom-built project designed t
 - python3 /tmp/TCPServerNew.py
 - python3 /TCPClientNew.py
 ## Common Docker Commands
-**Stop All Containers**
+1. **Stop All Containers**
 - docker-compose down
-**Remove All Containers**
+2. **Remove All Containers**
 - ./purgeAll.sh
-**List Running Containers**
+3. **List Running Containers**
 - docker ps
 ## Author
 **Benjamin Maher**  
