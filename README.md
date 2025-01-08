@@ -25,8 +25,13 @@ The TCP/IP Client-Server Communication Tool is a custom-built project designed t
 ---
 
 ## Project Structure
-. ├── docker-compose.yml # Docker configuration for environment setup ├── purgeAll.sh # Cleanup script to remove Docker containers ├── TCPClient.py # Basic client-side implementation ├── TCPClientNew.py # Extended client with additional features ├── TCPServerNew.py # Advanced server with task validation and networking functions └── TCPServerSelect.py # Select-based server for handling multiple clients simultaneously
----
+.
+├── docker-compose.yml    # Docker configuration for environment setup
+├── purgeAll.sh           # Cleanup script to remove Docker containers
+├── TCPClient.py          # Basic client-side implementation
+├── TCPClientNew.py       # Extended client with additional features
+├── TCPServerNew.py       # Advanced server with task validation and networking functions
+└── TCPServerSelect.py    # Select-based server for handling multiple clients simultaneously
 
 ## Learning Outcomes
 - **Networking Fundamentals**:  
@@ -81,17 +86,17 @@ The TCP/IP Client-Server Communication Tool is a custom-built project designed t
    ```bash
    git clone https://github.com/Golani51/tcp-ip-tool
    cd tcp-ip-tool
-1. **Clone the Repository**
+2. **Start Docker Environment**
 - docker-compose up -d
-2. **Access Docker Containers**
+3. **Access Docker Containers**
 - docker exec -it H1 /bin/bash
 - docker exec -it H2 /bin/bash
 - docker exec -it H3 /bin/bash
-3. **Copy Files to Containers**
+4. **Copy Files to Containers**
 - docker cp TCPServerNew.py H1:/tmp/TCPServerNew.py
 - docker cp TCPClientNew.py H2:/TCPClientNew.py
 - docker cp TCPClientNew.py H3:/TCPClientNew.py
-4. **Run the Server and Client**
+5. **Run the Server and Client**
 - python3 /tmp/TCPServerNew.py
 - python3 /TCPClientNew.py
 ##Common Docker Commands**
