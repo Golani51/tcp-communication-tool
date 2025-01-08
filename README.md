@@ -25,12 +25,7 @@ The TCP/IP Client-Server Communication Tool is a custom-built project designed t
 ---
 
 ## Project Structure
-├── docker-compose.yml    # Docker configuration for environment setup
-├── purgeAll.sh           # Cleanup script to remove Docker containers
-├── TCPClient.py          # Basic client-side implementation
-├── TCPClientNew.py       # Extended client with additional features
-├── TCPServerNew.py       # Advanced server with task validation and networking functions
-└── TCPServerSelect.py    # Select-based server for handling multiple clients simultaneously
+├── docker-compose.yml # Docker configuration for environment setup ├── TCPClientNew.py # Extended client with additional features └── TCPServerNew.py # Advanced server with task validation and networking functions
 
 ## Learning Outcomes
 - **Networking Fundamentals**:  
