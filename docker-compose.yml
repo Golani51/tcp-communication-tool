@@ -1,0 +1,66 @@
+version: "2.2"
+
+networks:
+  net4-0:
+    ipam:
+      config:
+        - subnet: 172.21.74.0/24
+
+services:
+  Host1:
+    image: rprustagi/ub22-apache2-cgi-py
+    container_name: H1
+    privileged: true
+    tty: true
+    cap_add:
+        - ALL
+    networks:
+      net4-0:
+        ipv4_address: 172.21.74.101
+    command: bash -c " 
+                       mkdir -p /tmp
+                       && tail -f /dev/null "
+
+  Host2:
+    image: rprustagi/ub22-apache2-cgi-py
+    container_name: H2
+    privileged: true
+    tty: true
+    cap_add:
+        - ALL
+    networks:
+      net4-0:
+        ipv4_address: 172.21.74.102
+    command: bash -c " 
+                       mkdir -p /tmp
+                       && tail -f /dev/null "
+
+
+  Host3:
+    image: rprustagi/ub22-apache2-cgi-py
+    container_name: H3
+    privileged: true
+    tty: true
+    cap_add:
+        - ALL
+    networks:
+      net4-0:
+        ipv4_address: 172.21.74.103
+    command: bash -c " 
+                       mkdir -p /tmp
+                       && tail -f /dev/null "
+
+  Host4:
+    image: rprustagi/ub22-apache2-cgi-py
+    container_name: H4
+    privileged: true
+    tty: true
+    cap_add:
+        - ALL
+    networks:
+      net4-0:
+        ipv4_address: 172.21.74.104
+    command: bash -c " 
+                       mkdir -p /tmp
+                       && tail -f /dev/null "
+
