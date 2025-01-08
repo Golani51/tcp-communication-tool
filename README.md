@@ -25,7 +25,6 @@ The TCP/IP Client-Server Communication Tool is a custom-built project designed t
 ---
 
 ## Project Structure
-.
 ├── docker-compose.yml    # Docker configuration for environment setup
 ├── purgeAll.sh           # Cleanup script to remove Docker containers
 ├── TCPClient.py          # Basic client-side implementation
@@ -99,7 +98,7 @@ The TCP/IP Client-Server Communication Tool is a custom-built project designed t
 5. **Run the Server and Client**
 - python3 /tmp/TCPServerNew.py
 - python3 /TCPClientNew.py
-##Common Docker Commands**
+##Common Docker Commands
 **Stop All Containers**
 - docker-compose down
 **Remove All Containers**
